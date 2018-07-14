@@ -88,12 +88,6 @@
               v-show="tagsEditStatus[index]"
               class="icon-undo">
             </i>
-            <i
-              @click="performDeleteTag(index)"
-              v-if="!$scopedSlots.tagActions"
-              v-show="!tagsEditStatus[index]"
-              class="icon-close">
-            </i>
             <slot
               v-if="$scopedSlots.tagActions"
               :tag="tag"
